@@ -1,0 +1,10 @@
+services:
+  innoscripta-study-case:
+    image: innoscripta-study-case:1.0.0
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
